@@ -1,0 +1,103 @@
+@import "src/assets/style/variables.scss";
+.G-container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.G-padding-25 {
+    width: 25%;
+    padding: 15px;
+}
+
+.G-padding-33 {
+    width: 33.3%;
+    padding: 15px;
+}
+
+.G-padding-50 {
+    width: 50%;
+    padding: 15px;
+}
+
+// main section width
+.G-main-section {
+    width: calc(100% - 260px);
+    @media (max-width: 990px) {
+        width: calc(100% - 90px);
+    }
+    @media (max-width: 767px) {
+        width: calc(100% - 70px);
+    }
+    @media (max-width: 576px) {
+        width: calc(100% - 40px);
+    }
+}
+
+.G-page-section {
+    padding: 30px;
+    background-color: $grey-0-5;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 767px) {
+        padding: 20px;
+    }
+    @media (max-width: 576px) {
+        padding: 15px;
+    }
+}
+
+// white sections in each page
+.G-section-container {
+    background-color: $white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid $grey-light;
+    height: fit-content;
+}
+
+.G-page-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-left: 8px;
+    @media (max-width: 767px) {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+}
+
+.G-page-subTitle {
+    font-size: 14px;
+    color: $grey;
+    margin-top: -10px;
+    margin-left: 8px;
+    margin-bottom: 35px;
+    @media (max-width: 767px) {
+        font-size: 12px;
+    }
+}
+
+.G-blue-color {
+    color: $blue-sky !important;
+}
+
+// page scroll in navigationBar and mainPage
+.G-wrapper {
+    height: calc(100vh - 20px);
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+// styles for scrolling--- NOT WORKING
+// /* Track */
+// ::-webkit-scrollbar-track {
+//     background: $purple-light;
+// }
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//     background: $purple;
+// }
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #555;
+// }

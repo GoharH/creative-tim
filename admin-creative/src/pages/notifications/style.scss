@@ -1,0 +1,72 @@
+@import "../../assets//style//variables.scss";
+// .notif-boxes {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: space-between;
+//     height: auto;
+// }
+.notification-box {
+    font-weight: 500;
+    height: 41px;
+    .line-height {
+        line-height: 1.2;
+    }
+}
+
+.height {
+    height: 103px;
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+
+.bg-green {
+    background-color: $green;
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-red {
+    background-color: $red;
+}
+
+.notification-place-buttons {
+    // width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .G-page-title-part {
+        margin-top: 25px;
+    }
+    .G-page-subTitle {
+        margin-bottom: 10px;
+    }
+    .notification-place {
+        margin-bottom: 35px;
+        .notif-place-btn {
+            width: 270px;
+            height: 40px;
+            color: $grey;
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: transparent;
+            border: 2px solid $grey;
+            border-radius: 5px;
+            margin: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .modal-btn {
+        width: 170px;
+        height: 40px;
+        color: $white;
+        background-color: $blue-sky;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+}

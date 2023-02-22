@@ -1,0 +1,22 @@
+@import "../../../assets/style/variables.scss";
+.icon-box {
+    width: 160px;
+    height: 158px;
+    border: 1px solid $grey-light;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    span {
+        font-size: 32px;
+        color: $grey-dark;
+    }
+    p {
+        color: $grey-1-5;
+        font-size: 11px;
+        margin-top: 25px;
+    }
+}

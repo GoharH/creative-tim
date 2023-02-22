@@ -1,0 +1,16 @@
+@import "../../../assets/style/variables.scss";
+.type-style {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    height: fit-content;
+    .title {
+        width: 150px;
+        font-size: 14px;
+        color: $grey;
+        margin-left: 8px;
+    }
+    .description {
+        width: -webkit-fill-available;
+    }
+}

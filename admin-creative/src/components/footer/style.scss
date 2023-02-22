@@ -1,0 +1,27 @@
+@import "../../assets/style/variables.scss";
+.footer-section {
+    height: 61px;
+    padding: 5px 30px;
+    color: $grey;
+    font-size: 16px;
+    border-bottom: $grey;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $grey-light;
+    justify-content: space-between;
+    @media (max-width: 991px) {
+        flex-direction: column;
+        padding: 0px 20px 3px;
+    }
+    @media (max-width: 767px) {
+        height: 55px;
+        font-size: 13px;
+        li {
+            padding: 3px 10px;
+        }
+    }
+    @media (max-width: 576px) {
+        height: 30px;
+        font-size: 10px;
+    }
+}

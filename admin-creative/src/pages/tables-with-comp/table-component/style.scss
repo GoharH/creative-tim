@@ -1,0 +1,11 @@
+@import "../../../assets//style//variables.scss";
+.table-row {
+    margin: 0px -15px;
+    div {
+        padding: 12px 15px 12px 12px;
+    }
+}
+
+.table-row:hover {
+    background-color: $grey-1-5 !important;
+}

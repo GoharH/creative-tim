@@ -1,0 +1,249 @@
+@import "../../assets/style/variables.scss";
+.header-section {
+    height: 61px;
+    padding: 5px 30px;
+    color: $grey;
+    font-size: 16px;
+    border-bottom: $grey;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $grey-light;
+    @media (max-width: 767px) {
+        height: 55px;
+    }
+    @media (max-width: 576px) {
+        height: 40px;
+    }
+    .header-navigation {
+        width: 100%;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+.header-title {
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        color: $grey;
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
+        @media (max-width: 576px) {
+            font-size: 15px;
+        }
+        @media (max-width: 320px) {
+            font-size: 10px;
+        }
+    }
+}
+
+.header-title:hover {
+    h2 {
+        color: $grey-dark;
+    }
+}
+
+.header-icons {
+    li {
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    li:hover {
+        color: $blue-sky;
+    }
+    span {
+        font-size: 18px;
+        // margin: 0px 10px;
+    }
+    .nav-link {
+        font-family: "Segoe UI", Courier, monospace;
+        font-size: 15px;
+    }
+}
+
+.header-links {
+    justify-content: flex-end;
+    li {
+        padding: 10px 15px;
+    }
+    a {
+        color: $grey !important;
+    }
+    li:hover a {
+        color: $blue-sky;
+    }
+}
+
+// burger menu style start
+.burger-menu-section {
+    @media (max-width: 1920px) {
+        display: none;
+    }
+    @media (max-width: 767px) {
+        display: inline;
+    }
+}
+
+nav {
+    // width: 400px;
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 18px;
+    @media (max-width: 767px) {
+        padding: 15px;
+    }
+    @media (max-width: 576px) {
+        height: 35px;
+        padding: 10px;
+    }
+}
+
+.burger-menu {
+    height: 100%;
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+    //background-color: red;
+    @media (max-width: 576px) {
+        width: 30px;
+    }
+}
+
+.burger-bar {
+    width: 45px;
+    height: 3px;
+    background-color: $grey;
+    border-radius: 5px;
+    @media (max-width: 767px) {
+        width: 30px;
+        height: 2px;
+    }
+    @media (max-width: 576px) {
+        width: 20px;
+        height: 2px;
+    }
+}
+
+.menu {
+    width: 30%;
+    height: 100vh;
+    background-color: $purple-sky;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    padding: 75px 15px 15px;
+    @media (max-width: 576px) {
+        padding: 55px 10px 10px;
+    }
+}
+
+// sliding menu
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: inherit;
+}
+
+// menu bar's animation
+//clicked
+.burger-bar.clicked:nth-child(1) {
+    transform: rotate(45deg) translate(3px, 9px);
+    //transform: rotate(45deg) translate(10px);
+    transition: ease-out 0.5s;
+    @media (max-width: 767px) {}
+    @media (max-width: 576px) {
+        transform: rotate(45deg) translate(0px, 6px);
+    }
+    @media (max-width: 320px) {}
+}
+
+.burger-bar.clicked:nth-child(2) {
+    transform: scale(0.1);
+    transition: ease-out 0.5s;
+}
+
+.burger-bar.clicked:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -15px);
+    //transform: rotate(-45deg) translate(15px);
+    transition: ease-out 0.5s;
+    @media (max-width: 767px) {}
+    @media (max-width: 576px) {
+        transform: rotate(-45deg) translate(3px, -10px);
+    }
+    @media (max-width: 320px) {}
+}
+
+//unclicked
+.burger-bar.unclicked {
+    transform: rotate(0) translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+// navigation list in burger menu
+.header-icons-BM {
+    li {
+        padding: 10px;
+        cursor: pointer;
+        @media (max-width: 576px) {
+            padding: 8px 5px;
+        }
+    }
+    li:hover {
+        color: $blue-sky;
+    }
+    span {
+        font-size: 18px;
+        @media (max-width: 576px) {
+            font-size: 15px;
+        }
+    }
+    .nav-link {
+        font-family: "Segoe UI", Courier, monospace;
+        font-size: 15px;
+        @media (max-width: 576px) {
+            font-size: 10px;
+        }
+    }
+    @media (max-width: 990px) {
+        display: inline;
+    }
+}
+
+.header-links-BM {
+    justify-content: flex-end;
+    li {
+        padding: 10px;
+        @media (max-width: 576px) {
+            padding: 8px 5px;
+            font-size: 15px;
+        }
+    }
+    a {
+        color: $grey;
+    }
+    li:hover a {
+        color: $blue-sky;
+    }
+    @media (max-width: 990px) {
+        ul {
+            margin-top: 30px;
+            display: inline;
+        }
+    }
+    @media (max-width: 576px) {
+        ul {
+            margin-top: 20px;
+        }
+    }
+}
+
+// burger menu style end

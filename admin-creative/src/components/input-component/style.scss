@@ -1,0 +1,22 @@
+@import "../../assets/style/variables.scss";
+.input-title {
+    font-size: 12px;
+    color: $grey;
+    position: absolute;
+    left: 15px;
+    pointer-events: none;
+    background-color: $white;
+    transform: translateY(-8px);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0px 2px;
+}
+
+.input-sec {
+    width: 100%;
+    position: relative;
+    margin: 15px 0px;
+    padding: 0px 8px;
+    @media (max-width: 767px) {
+        margin: 10px 0px;
+    }
+}

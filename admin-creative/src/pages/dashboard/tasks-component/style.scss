@@ -1,0 +1,40 @@
+@import "../../../assets//style//variables.scss";
+.task-box {
+    padding: 15px 0px;
+    border-top: 1px solid $grey-light;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px -15px;
+    .check-box {
+        width: 17px;
+        height: 17px;
+        border: 2px solid $blue-sky;
+        border-radius: 6px;
+        margin: 0px 20px;
+    }
+    .task-descript {
+        font-size: 14px;
+        margin-right: 15px;
+    }
+    .icon-pencil2 {
+        width: 15px;
+        height: 15px;
+        color: $blue-sky;
+        opacity: 0.4;
+        transition: 0.3s;
+    }
+    .icon-cancel-circle {
+        width: 15px;
+        height: 15px;
+        color: $red-dark;
+        margin: 0px 15px;
+        opacity: 0.4;
+        transition: 0.3s;
+    }
+}
+
+.task-box:hover .icon-cancel-circle,
+.task-box:hover .icon-pencil2 {
+    opacity: 1;
+    transition: 0.3s;
+}
