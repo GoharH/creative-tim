@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PageContainer from "../../components/page-container";
 import './style.scss';
 import TableCompo from "./table-component";
 
@@ -53,7 +54,7 @@ const TableWithComponent = () => {
             city: 'Gloucester',
         },
     ])
-    return <>
+    return <PageContainer title={"Table List"}>
         <div className="G-section-container table-sec">
             <div className="G-page-title-part">
                 <h3 className="G-page-title">Striped Table with Hover</h3>
@@ -102,6 +103,6 @@ const TableWithComponent = () => {
                 })}
             </div>
         </div>
-    </>
+    </PageContainer>
 }
 export default TableWithComponent

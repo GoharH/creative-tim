@@ -6,6 +6,7 @@ import StrackedChart from './stracked-chart';
 import SplineChart from './spline';
 import ColumnChart from './column';
 import Task from "./tasks-component";
+import PageContainer from "../../components/page-container";
 
 
 const Dashboard = () => {
@@ -17,7 +18,7 @@ const Dashboard = () => {
         { description: 'Read "Following makes Medium better"' },
         { description: 'Unfollow 5 enemies from twitter' },
     ])
-    return <>
+    return <PageContainer title={'Dashboard'}>
         <div className="G-flex charts">
             <div className="G-section-container pie-chart-sec">
                 <div className="G-page-title-part">
@@ -87,6 +88,6 @@ const Dashboard = () => {
                 <p className="chart-updates"> Updated 3 minutes ago</p>
             </div>
         </div>
-    </>
+    </PageContainer>
 }
 export default Dashboard

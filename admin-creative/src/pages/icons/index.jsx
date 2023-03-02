@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PageContainer from "../../components/page-container";
 import IconBox from "./icon-box-component";
 import './style.scss';
 
@@ -126,18 +127,20 @@ const Icons = () => {
     }
     ])
     console.log(icon[0].iconClass)
-    return <div className="G-section-container">
-        <div className="G-page-title-part">
-            <h3 className="G-page-title">100 Awesome Nucleo Icons</h3>
-            <p className="G-page-subTitle">Handcrafted by our friends from <span className="G-blue-color">NucleoApp</span></p>
+    return <PageContainer title={"Icons"}>
+        <div className="G-section-container">
+            <div className="G-page-title-part">
+                <h3 className="G-page-title">100 Awesome Nucleo Icons</h3>
+                <p className="G-page-subTitle">Handcrafted by our friends from <span className="G-blue-color">NucleoApp</span></p>
+            </div>
+            <div className="icon-boxes">
+                {icon.map((item, index) => {
+                    return <IconBox key={index}
+                        iconClass={item.iconClass}
+                        iconName={item.iconName} />
+                })}
+            </div>
         </div>
-        <div className="icon-boxes">
-            {icon.map((item, index) => {
-                return <IconBox key={index}
-                    iconClass={item.iconClass}
-                    iconName={item.iconName} />
-            })}
-        </div>
-    </div>
+    </PageContainer>
 }
 export default Icons

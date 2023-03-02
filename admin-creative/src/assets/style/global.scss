@@ -34,19 +34,6 @@
     }
 }
 
-.G-page-section {
-    padding: 30px;
-    background-color: $grey-0-5;
-    display: flex;
-    flex-direction: column;
-    @media (max-width: 767px) {
-        padding: 20px;
-    }
-    @media (max-width: 576px) {
-        padding: 15px;
-    }
-}
-
 // white sections in each page
 .G-section-container {
     background-color: $white;
@@ -82,22 +69,26 @@
 }
 
 // page scroll in navigationBar and mainPage
-.G-wrapper {
+.G-wrapper-page,
+.G-wrapper-nav {
     height: calc(100vh - 20px);
     overflow: hidden;
     overflow-y: auto;
+    &::-webkit-scrollbar {
+        background: $grey-1-5;
+        width: 10px;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $purple;
+    }
+}
+
+.G-wrapper-nav {
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 // styles for scrolling--- NOT WORKING
 // /* Track */
-// ::-webkit-scrollbar-track {
-//     background: $purple-light;
-// }
-// /* Handle */
-// ::-webkit-scrollbar-thumb {
-//     background: $purple;
-// }
-// /* Handle on hover */
-// ::-webkit-scrollbar-thumb:hover {
-//     background: #555;
-// }

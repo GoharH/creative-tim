@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BurgerMenu from "./burger-menu";
 import './style.scss'
 
-const Header = () => {
+const Header = ({ title }) => {
     // to change burger classes 
     const [burger_class, setBurgerClass] = useState('burger-bar unclicked')
     const [menu_class, setMenuClass] = useState('menu hidden')
@@ -21,7 +21,7 @@ const Header = () => {
 
     return <section className="header-section G-flex">
         <div className="header-title">
-            <h2>Icons</h2>
+            <h2>{title}</h2>
         </div>
         <div className="header-navigation G-flex">
             <ul className="header-icons G-flex">

@@ -2,8 +2,8 @@
 .nav-bar-section {
     display: block;
     width: 260px;
-    // height: 100vh;
-    background: #333;
+    background-size: cover;
+    background-color: #333;
     @media (max-width: 990px) {
         width: 90px;
     }
@@ -19,6 +19,7 @@
         background-color: $purple;
     }
     .nav-bar-container {
+        height: calc(100vh - 61px);
         padding: 15px;
         color: $white;
         @media (max-width: 991px) {
@@ -58,10 +59,8 @@
 }
 
 .nav-bar-item {
-    padding: 15px;
     align-items: center;
     cursor: pointer;
-    color: $white;
     opacity: 0.9;
     @media (max-width: 991px) {
         display: flex;
@@ -71,6 +70,10 @@
     }
     @media (max-width: 576px) {
         padding: 5px;
+    }
+    .bar-item {
+        padding: 15px;
+        color: $white;
     }
     span {
         font-size: 28px;
